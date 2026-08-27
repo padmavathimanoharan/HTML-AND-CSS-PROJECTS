@@ -1,0 +1,298 @@
+/* google fonts imported */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: white;
+    overflow-x: hidden;
+    /* Hides the bottom left right scroll bar when elements stretch beyond the screen border */
+}
+
+/* navbar */
+li {
+    display: inline;
+    padding: 5px;
+}
+
+a {
+    font-family: 'Roboto', sans-serif;
+    /* font from google fonts */
+    font-size: 20px;
+    font-weight: 700;
+    text-shadow: 1px .5px 4px rgba(46, 31, 31, 0.5);
+    color: white;
+    text-decoration: none;
+    /* removes default link styling */
+}
+
+/* pseudoclass rule set for the anchor tag */
+a:hover {
+    /* colon specifies the state of the element */
+    color: #d7eaf7;
+}
+
+.nav-bar {
+    background-color: #216391;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* The following minus margin stretch the navbar background beyond the web browser screen edge */
+    margin-top: -8px;
+    margin-left: -10px;
+    margin-right: -10px;
+    position: sticky;
+    /* creates a sticky element that stays in the same spot in the browser screen */
+    top: 0;
+    /* tells the browser to stick the element at the top of the page based on user scrolling */
+    z-index: 9;
+    /* sets the stacking order of the element so it is on top of other elements */
+}
+
+/* creates a line under the home and contact links to separate them from the images link */
+#nav-border {
+    padding-bottom: 10px;
+    border-bottom: 3px solid #ffffff;
+}
+
+/* Headers */
+h1,
+h2,
+h3 {
+    color: #0a3f63;
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+    text-shadow: 1px .5px 4px rgba(0, 0, 0, 0.5);
+    margin: 0px;
+}
+
+h1 {
+    font-size: 60px;
+    margin-top: 50px;
+}
+
+h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+#contact-h3 {
+    text-shadow: none;
+}
+
+/* creates a text color change animation on the h1 tags for the home and contact page headers */
+@keyframes color-text {
+    0% {
+        color: #b5e1ff;
+    }
+
+    /*Begin of the animation*/
+    100% {
+        color: #0a3f63;
+    }
+
+    /*End of the animation*/
+}
+
+/* calls the animation by it's name in a css class so it can be applied to a specific HTML element */
+.animate-text {
+    animation: color-text 4s;
+}
+
+/* Body Content */
+img {
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 19);
+}
+
+.column {
+    float: left;
+    width: 48%;
+    /* Places the images side by side when the float property is applied */
+    padding: 10px;
+}
+
+/* Group elements inside a div element together and forces any floating elements outside of the div under it with this class selector */
+.container {
+    background-size: 100% !important;
+    margin: 0px -60px 50px -40px;
+    /* The negative margin stretches the background image beyond the screen border */
+    padding-top: 5px;
+    /* Padding will add an inline space so the elements don't sit on the edge of the div */
+    padding-bottom: 10px;
+}
+
+/* This is part of the .container class selector to format the elements to display in a table like format */
+.container::after {
+    content: "";
+    clear: both;
+    /* Clears the float property on the column class so the elements don't overlap */
+    display: table;
+}
+
+/* Sets up the size of each div that holds an image so the image can be centered */
+.image-container {
+    position: relative;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+/* Sets the background color for each div with an image and specifies which ones by the use of the id names for each image */
+#cake {
+    background-color: #d7eaf7;
+}
+
+#ancake {
+    background-color: #c3e0c5;
+}
+
+#bread {
+    background-color: #c3e0c5;
+}
+
+#dessert {
+    background-color: #d7eaf7;
+}
+
+/* Sets up the properties of each image */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 500px;
+    height: 350px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    opacity: 0;
+
+}
+
+/* The :hover pseudo-class triggers the overlay class to 60% opacity when a user hovers their mouse over an image */
+.overlay:hover {
+    opacity: 0.6;
+}
+
+/* This selector targets the video on the page */
+iframe {
+    display: table;
+    margin: auto;
+    border-radius: 20px;
+    border: none;
+}
+
+/* Styles the div element that holds the video */
+#cakevideo {
+    background-color: #c3e0c5;
+    padding-top: 5px;
+    /* Padding will add an inline space so the elements don't sit on the edge of the div  */
+    padding-bottom: 50px;
+}
+
+footer {
+    background-color: #216391;
+    margin-top: 50px;
+    /* Negative margin stretches the footer background beyond the web browser screen edge on the left and right */
+    margin-left: -10px;
+    margin-right: -10px;
+    bottom: 0;
+}
+
+p {
+    text-align: center;
+    font-family: 'Mukta', sans-serif;
+}
+
+/* styles the table elements within the footer tags */
+table {
+    width: 100%;
+}
+
+td {
+    text-align: left;
+    width: 33%;
+    /* we divide the three columns equally so that each column takes up one-third of the browser width */
+}
+
+/* specifically styles the paragraph elements within the table data elements */
+td p {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+/* Form css */
+form {
+    padding: 15px;
+    display: table;
+    margin: auto;
+}
+
+input {
+    border: 2px solid rgb(165, 165, 165);
+    border-radius: 2px;
+    padding: 1px;
+    margin: 10px 15px 10px 0px;
+    font-size: 20px;
+    color: rgb(165, 165, 165);
+    transition: color 0.3s ease-out;
+}
+
+/* The :focus pseudo-class triggered when a user clicks on an input element */
+input:focus {
+    box-sizing: border-box;
+    border: 2px solid #0a3f63;
+    color: #000000;
+    transition: 0.3s ease-in;
+    outline: none;
+}
+
+label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 3px solid rgb(165, 165, 165);
+    border-radius: 4px;
+    background: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    resize: both;
+    transition: color 0.3s ease-out;
+}
+
+textarea:focus {
+    box-sizing: border-box;
+    border: 3px solid #0a3f63;
+    color: #000000;
+    transition: 0.3s ease-in;
+    outline: none;
+}
+
+input[type=submit] {
+    background-color: #0a3f63;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: white;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #052133;
+}   
