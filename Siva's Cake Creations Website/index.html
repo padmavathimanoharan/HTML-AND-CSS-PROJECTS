@@ -1,84 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Siva's Cakes</title>
-        <meta charset="UTF-8">
-        <meta name="description" content="View Siva's Cakes">
-        <meta name="author" content="Padmavathi">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body class="home-page">
-        <!--Navigation Section NAVBAR-->
-            <nav>
-                <!--Unordered List-->
-                <nav>
-                    <ul> 
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="contact.html">CONTACT US</a></li>
-                    </ul>
-                </nav>
-                <ul>
-                    <!--HTML Bookmarks # denotes number-->
-                    <li><a href="#cake">Birthday Cakes</a></li>
-                    <li><a href="#ancake">Anniversary Cakes</a></li>
-                    <li><a href="#bread">Breads</a></li>
-                    <li><a href="#dessert">Dessert</a></li>
-                    <li><a href="#cakevideo">Cake Video</a></li>
-                </ul>
-            </nav>
-        <!--Header-->
-        <header>
+
+<head>
+    <title>Siva's Cakes</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="View Siva's Cakes">
+    <meta name="author" content="Padmavathi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body class="home-page">
+    <!--Navigation Section NAVBAR-->
+    <nav class="nav-bar">
+        <!--Unordered List-->
+        <ul id="nav-border">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+        </ul>
+        <ul>
+            <!--HTML Bookmarks # denotes number-->
+            <li><a href="#cake">Birthday Cakes</a></li>
+            <li><a href="#ancake">Anniversary Cakes</a></li>
+            <li><a href="#bread">Breads</a></li>
+            <li><a href="#dessert">Dessert</a></li>
+            <li><a href="#cakevideo">Cake Video</a></li>
+        </ul>
+    </nav>
+    <!--Header-->
+    <header>
+        <div>
+            <h1 class="animate-text">Welcome to the Siva's Cake Creations!</h1>
+        </div>
+    </header>
+    <blockquote class="cor">Executive Sous Chef with 14+ years of progressive culinary experience across hotels,
+        restaurants, catering, banquet, and pastry operations, including 6+ years of Canadian experience.</blockquote>
+    <!--Cake Images-->
+    <section>
+        <div class="container">
+            <h2>Choose a Cake!</h2>
             <div>
-                <h1>Welcome to the Siva's Cake Creations!</h1>
-            </div>
-        </header>
-        <blockquote>Executive Sous Chef with 14+ years of progressive culinary experience across hotels, restaurants, catering, banquet, and pastry operations, including 6+ years of Canadian experience.</blockquote> 
-        <!--Cake Images-->
-        <section>
-            <div>
-                <h2>Choose a Cake!</h2>
-                <div>
-                    <!--Birthday Cakes-->
-                    <div id="cake">
+                <!--Birthday Cakes-->
+                <div id="cake" class="column">
+                    <div class="image-container">
                         <h3>Birthday Cakes</h3>
                         <img src="images/IMG_2480.jpeg" alt="Picture of Birthday Cakes">
+                        <div class="overlay"></div>
                     </div>
-                    <!--Anniversary Cakes-->
-                    <div id="ancake">
+                </div>
+                <!--Anniversary Cakes-->
+                <div id="ancake" class="column">
+                    <div class="image-container">
                         <h3>Anniversary Cakes</h3>
                         <img src="images/IMG_3383.jpeg" alt="Picture of Anniversary Cakes">
+                        <div class="overlay"></div>
                     </div>
-                    <!--Breads-->
-                    <div id="bread">
+                </div>
+                <!--Breads-->
+                <div id="bread" class="column">
+                    <div class="image-container">
                         <h3>Breads</h3>
                         <img src="images/IMG Bread.jpg" alt="Picture of Breads">
+                        <div class="overlay"></div>
                     </div>
-                    <!--Dessert-->
-                    <div id="dessert">
+                </div>
+                <!--Dessert-->
+                <div id="dessert" class="column">
+                    <div class="image-container">
                         <h3>Dessert</h3>
                         <img src="images/IMG_Dessert 2.jpg" alt="Picture of Dessert">
+                        <div class="overlay"></div>
                     </div>
                 </div>
             </div>
-        </section>
-        <!--Videos-->
-        <section>
-            <div>
-                <h2>How to make a Cake</h2>
-                <div id="cakevideo">
-                    <h3>This is the only vanilla cake recipe you’ll ever need! Follow along as we whip up extra fluffy batter, pipe on butter cream frosting, and decorate it to perfection.</h3>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/dvXhNyHtdoo"></iframe>
-                </div>
+        </div>
+    </section>
+    <!--Videos-->
+    <section>
+        <div class="container">
+            <h2>How to make a Cake</h2>
+            <div id="cakevideo">
+                <p>This is the only vanilla cake recipe you will ever need! Follow along as we whip up extra fluffy
+                    batter, pipe on butter cream frosting, and decorate it to perfection.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dvXhNyHtdoo"></iframe>
             </div>
-        </section>
-        <!--Footer-->
-        <footer>
-            <em>
-                <h6>
-                    <p>Siva's Cake Creations! &copy; 30 Denton Avenue, Scarborough, ON M1L4P2. Call +1-647-867-9007</p>                    
-                </h6>
-            </em>
-        </footer>
-    </body>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer>
+        <p>Siva's Cake Creations! &copy; 2026</p>
+    </footer>
+</body>
 </html>
