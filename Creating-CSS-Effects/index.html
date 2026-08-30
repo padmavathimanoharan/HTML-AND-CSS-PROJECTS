@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Effects</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="#">Home</a></li> <!-- # denotes top of the same web page -->
+            <li class="drop"><a href="#">Images</a>
+                <div class="rollover-menu">
+                    <a href="#image1">Image 1</a>
+                    <a href="#image2">Image 2</a>
+                    <a href="#image3">Image 3</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <p>Creating CSS Effects</p>
+    <!-- Images -->
+    <section>
+        <!-- Image one-->
+        <div class="image-container" id="image1">
+            <img src="images/image1.jpg" alt="Image 1">
+            <div class="overlay"></div>
+        </div>
+        <!-- Image two-->
+        <div class="image-container" id="image2">
+            <img src="images/image2.jpg" class="zoom" alt="Image 2">
+        </div>
+        <!-- Image three-->
+        <div class="image-container" id="image3">
+            <div class="circle">
+                <img src="images/image3.jpg" alt="Image 3">
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-text">
+            <p>Padmavathi Learning CSS Effects &copy; 2026 </p>
+        </div>
+    </footer>
+</body>
+
+</html>
