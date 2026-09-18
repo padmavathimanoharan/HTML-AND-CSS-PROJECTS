@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MediaQuery</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Padmavathi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: pink;
+        }
+
+        @media screen and (min-width: 480px) and (max-width: 600px) {
+            body {
+                background-color: lightgreen;
+            }
+            p {
+                color: blue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Resize the browser window to see the effect!</h1>
+    <p>The media query is applied if the media type is screen, and the viewport width is between 480px and 600px.</p>
+</body>
+
+</html>

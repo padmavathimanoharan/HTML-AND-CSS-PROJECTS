@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML&CSS Challenges</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Padmavathi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <!--Fixed NAVBAR-->
+    <div class="nav" id="home">
+        <nav>
+            <ul class="ul">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#home2">Home</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <div id="about">
+            <h1>HTML & CSS Challenges</h1>
+            <p class="para">A comprehensive roadmap of hands-on web development challenges designed to master semantic
+                HTML tables, structured page footers, and fixed navigation bars, while deeply exploring CSS positioning,
+                background layers, and text-over-image styling techniques using modern layout properties.</p>
+            <!--Position text over image-->
+            <div class="container">
+                <img src="images/spring.jpg" alt="Nature Spring" style="width: 100%;">
+                <div class="tleft">Top Left</div>
+                <div class="tright">Top Right</div>
+                <div class="bleft">Bottom Left</div>
+                <div class="bright">Bottom Right</div>
+                <div class="centered">Centered</div>
+            </div>
+            <br>
+            <!--HTML Image-->
+            <img src="images/panda.jpg" alt="Panda" class="center">
+
+            <br>
+        </div>
+        <div id="home2">
+            <!--HTML Tables-->
+            <table>
+                <th>ItemName</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <tr>
+                    <td>Books</td>
+                    <td>5</td>
+                    <td>70</td>
+                </tr>
+                <tr>
+                    <td>Markers</td>
+                    <td>7</td>
+                    <td>85</td>
+                </tr>
+                <tr>
+                    <td>Pencils</td>
+                    <td>4</td>
+                    <td>25</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        <!--Two Column Layout-->
+        <div class="row">
+            <div class="column left">
+                <h3>Name</h3>
+                <p>Pragati</p>
+                <p>Lokini</p>
+            </div>
+            <div class="column right">
+                <h3>Age</h3>
+                <p>8 years old</p>
+                <p>1 years old</p>
+            </div>
+        </div>
+        <br>
+        <div class="container1">
+            <img src="images/Initial P.jfif" alt="Avatar" class="image my-video">
+            <div class="overlay">
+                <div class="text">Personal Image</div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <video width="100%" height="300" class="my-video" controls autoplay muted loop>
+                <source src="images/video1.mp4" type="video/mp4">
+            </video>
+            <div class="bleft">Bottom Left</div>
+            <div class="bright">Bottom Right</div>
+            <div class="centered">Centered</div>
+        </div>
+    </div>
+    <!--HTML Footer Tag-->
+    <footer>
+        <p>&copy; challenges demo 2026 <a href="mailto:padmaa_m@yahoo.in">padmaa_m@yahoo.in</a></p>
+    </footer>
+</body>
+
+</html>
